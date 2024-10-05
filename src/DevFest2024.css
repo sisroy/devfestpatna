@@ -1,0 +1,95 @@
+/* DevFest2024.css */
+.devfest-container {
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.devfest-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.devfest-text {
+  flex: 1;
+  padding-right: 2rem;
+}
+
+.devfest-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.devfest-image img {
+  max-width: 80%;
+}
+
+.responsive-h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.description {
+  max-width: 90%;
+  line-height: 1.6;
+}
+
+.event-details {
+  font-size: 1rem;
+}
+
+.event-location {
+  color: black;
+  text-decoration: none;
+}
+
+.event-location:hover {
+  text-decoration: underline;
+}
+
+.register-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #FFD427;
+  color: black;
+  border: 1.5px solid #1e1e1e;
+  border-radius: 50px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 2rem;
+  text-decoration: none;
+}
+
+.register-button:hover {
+  background-color: #f5c007;
+}
+
+@media (max-width: 768px) {
+  .devfest-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .devfest-text {
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .devfest-image img {
+    max-width: 100%;
+  }
+
+  .responsive-h1 {
+    font-size: 2.5rem;
+  }
+
+  .register-button {
+    margin: 0 auto;
+  }
+}
+
