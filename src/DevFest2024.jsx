@@ -24,7 +24,7 @@ const DevFest2024 = ({ mainData }) => {
           <p className="event-details my-5">
             <span className="mr-4">
             <img 
-      src="/assets/img/calender.svg" 
+      src="assets/img/calender.svg" 
       alt="Calendar Icon" 
       style={{ backgroundColor: '#FFD427',  borderRadius: '5px', width: '20px',    marginRight: '8px', verticalAlign: 'middle'}} 
     />
@@ -32,7 +32,7 @@ const DevFest2024 = ({ mainData }) => {
             </span>
             <span className="mr-4">
                       <img 
-                src="/assets/img/map.svg" 
+                src="assets/img/map.svg" 
                 alt="Map Icon" 
                 style={{ backgroundColor: '#FFD427',  borderRadius: '5px',width: '20px', marginRight: '8px', verticalAlign: 'middle' }} 
               />
