@@ -1,0 +1,418 @@
+import React from 'react';
+import './HomeStats.css';
+
+const HomeStats = () => {
+  const stats = [
+    { value: '23+', name: 'Speakers' },
+    { value: '200+', name: 'Participants' },
+    { value: '10+', name: 'Sessions' },
+    { value: '2+', name: 'Workshops' }
+  ];
+
+  return (
+    <div className="homestats-wrapper">
+      {/* Decorative elements on the left side */}
+      <div className="decorative-elements">
+        <img src="assets/img/element1.svg" alt="Decorative Icons" />
+      </div>
+
+      {/* Main Stats inside puzzle-piece-like frames */}
+      <div className="homestats-container">
+        {stats.map((stat, index) => (
+          <div key={index} className="stat-card">
+            <img src="assets/img/frame.png" alt="Frame" className="frame-image" />
+            <div className="stat-content">
+              <h1>{stat.value}</h1>
+              <p>{stat.name}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default HomeStats;
+                   
+
+
+/* Wrapper container for homestats and decorative elements */
+.homestats-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Outer container that holds everything */
+  .homestats-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f7f7f7; /* Light background color */
+    border: 2px solid #ccc; /* Darker border */
+    border-radius: 30px; /* Rounded edges for outer container */
+    width: 100%; /* Full width of the container */
+    max-width: 1200px; /* Maximum width */
+    margin: 0 auto; /* Center align the whole container */
+    position: relative;
+  }
+  
+  /* Left-side decorative elements */
+  .decorative-elements {
+    width: 150px;
+    margin-right: 20px; /* Space between the icons and the stats */
+  }
+  
+  .decorative-elements img {
+    width: 100%; /* Make sure the image scales properly */
+    height: auto;
+  }
+  
+  /* Frame container that holds the puzzle piece frames */
+  .stat-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 180px; /* Width of the frame */
+    height: 180px; /* Height of the frame */
+    margin: 0 30px; /* Space between each stat card */
+  }
+  
+  /* Frame image */
+  .frame-image {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  
+  /* Stat content inside the frame with background color */
+  .stat-content {
+    position: relative;
+    z-index: 2; /* Ensures the text is above the frame image */
+    padding: 50px 0; /* Adjust spacing to center within the frame */
+    /* background-color: rgba(255, 255, 255, 0.9); /* Light background inside the frame */
+    width: 80%; 
+    height: 80%;
+    border-radius: 0px; /* Make sure the content background has some rounded edges */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .stat-content h1 {
+    font-size: 2 rem;
+    color: #101010;
+  }
+  
+  .stat-content p {
+    font-size: 1rem;
+    color: #000000;
+    margin-top: 10px;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+/* Single outer container for homestats and decorative elements */
+.homestats-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align items to start */
+    padding: 20px;
+    background-color: #f7f7f7; /* Light background color */
+    border: 2px solid #060606; /* Darker border */
+    border-radius: 30px; /* Rounded edges for outer container */
+    width: 100%; /* Full width of the container */
+    max-width: 1200px; /* Maximum width */
+    margin: 0 auto; /* Center align the whole container */
+  }
+  
+  /* Left-side decorative elements */
+  .decorative-elements {
+    width: 150px;
+    margin-right: 20px; /* Space between the icons and the stats */
+  }
+  
+  .decorative-elements img {
+    width: 100%; /* Make sure the image scales properly */
+    height: auto;
+  }
+  
+  /* Wrapper for the stat cards */
+  .stats-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 50px;
+  }
+  
+  /* Frame container that holds the puzzle piece frames */
+  .stat-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 180px; /* Width of the frame */
+    height: 180px; /* Height of the frame */
+    margin: 0 15px; /* Space between each stat card */
+  }
+  
+  /* Frame image */
+  .frame-image {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  
+  /* Stat content inside the frame */
+  .stat-content {
+    position: relative;
+    z-index: 2; /* Ensures the text is above the frame image */
+    padding: 50px 0; /* Adjust spacing to center within the frame */
+    width: 80%; 
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .stat-content h1 {
+    font-size: 2rem;
+    color: #101010;
+  }
+  
+  .stat-content p {
+    font-size: 1rem;
+    color: #000000;
+    margin-top: 10px;
+  }
+  
+
+
+
+
+
+devfest2023.css
+
+
+
+/* General DevFest2024 Styling */
+.devfest-container {
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.devfest-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.devfest-text {
+  flex: 1;
+  padding-right: 2rem;
+}
+
+.devfest-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.devfest-image img {
+  max-width: 80%;
+}
+
+.responsive-h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.description {
+  max-width: 90%;
+  line-height: 1.6;
+}
+
+.event-details {
+  font-size: 1rem;
+}
+
+.event-location {
+  color: black;
+  text-decoration: none;
+}
+
+.event-location:hover {
+  text-decoration: underline;
+}
+
+.register-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #FFD427;
+  color: black;
+  border: 1.5px solid #1e1e1e;
+  border-radius: 50px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 2rem;
+  text-decoration: none;
+}
+
+.register-button:hover {
+  background-color: #f5c007;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .devfest-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .devfest-text {
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .devfest-image img {
+    max-width: 100%;
+  }
+
+  .responsive-h1 {
+    font-size: 2.5rem;
+  }
+
+  .register-button {
+    margin: 0 auto;
+  }
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: #f3f3f3;
+  padding: 50px;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.event-details {
+  margin-top: 20px;
+}
+
+.event-details p {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.event-details .icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.cta-button {
+  margin-top: 30px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+/* HomeStats Section */
+.stats-container {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f3f3f3;
+  border-radius: 20px;
+  border: 1.5px solid black;
+  position: relative;
+}
+
+.stats-row {
+  display: flex;
+  gap: 20px;
+}
+
+.stat-box {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.stat-box h1 {
+  font-size: 2rem;
+}
+
+.stat-box p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+/* Icon frame (for Speakers, Participants, Sessions, Workshops) */
+.frame-icon {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 50px;
+  height: 50px;
+}
+
+.right-side-image {
+  margin-left: 20px;
+}
+
+.right-side-image img {
+  width: 100px;
+  height: auto;
+}

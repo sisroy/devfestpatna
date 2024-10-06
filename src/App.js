@@ -9,8 +9,8 @@ function App() {
     },
     eventInfo: {
       description: { short: 'An annual event hosted by the Google Developers Group across the world to bring the technology closer to the developers. It is an all day developer conference where we aim to focus on multiple technologies through lightning talks, sessions, workshops, etc.' },
-      date: 'December 26, 2024   ',
-      venue: { address: 'NIT PATNA', map_link: ' https://g.co/kgs/cRw73D6 ' },
+      date: 'December XX, 2024   ',
+      venue: { address: 'TBA', map_link: '' },
       registeration: {
         link: 'https://example.com/register',
         end_date: '2024-11-30',
